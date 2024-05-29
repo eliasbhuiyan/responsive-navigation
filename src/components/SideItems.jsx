@@ -1,8 +1,7 @@
-const SideItems = ({ children, path }) => {
+const SideItems = ({ children }) => {
   return (
     <div className="megaMenu_sideitem">
-      <span></span>
-      <a href={path}>{children}</a>
+      {children}
     </div>
   );
 };

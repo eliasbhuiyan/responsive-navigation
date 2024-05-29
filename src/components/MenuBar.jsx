@@ -1,6 +1,6 @@
 const MenuBar = ({ children }) => {
   return (
-    <nav>
+    <nav className="navbar_main">
       <ul>{children}</ul>
     </nav>
   );

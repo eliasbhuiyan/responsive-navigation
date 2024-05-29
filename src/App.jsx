@@ -1,9 +1,11 @@
-import Navbar from "./components/MegaMenu";
+import MegaMenu from "./components/MegaMenu";
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
+      <MegaMenu>
+        
+      </MegaMenu>
     </div>
   );
 }

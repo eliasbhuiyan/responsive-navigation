@@ -1,9 +1,5 @@
-const NavItem = ({ children, path }) => {
-  return (
-    <li className="nav-item">
-      <a href={path}>{children}</a>
-    </li>
-  );
+const NavItem = ({ children }) => {
+  return <li className="nav-item">{children}</li>;
 };
 
 export default NavItem;
