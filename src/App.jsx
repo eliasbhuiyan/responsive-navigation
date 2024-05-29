@@ -1,16 +1,11 @@
-import Navbar from './components/MegaMenu';
-import NavItem from './components/NavItem';
+import Navbar from "./components/MegaMenu";
 
 function App() {
-    return (
-        <div className="App">
-            <Navbar>
-                <NavItem>Home</NavItem>
-                <NavItem>About</NavItem>
-                <NavItem>Contact</NavItem>
-            </Navbar>
-        </div>
-    );
+  return (
+    <div className="App">
+      <Navbar></Navbar>
+    </div>
+  );
 }
 
 export default App;

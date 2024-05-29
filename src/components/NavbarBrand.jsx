@@ -1,11 +1,9 @@
-import React from 'react'
-
-const NavbarBrand = ({children}) => {
+const NavbarBrand = ({ children }) => {
   return (
-    <div>
-        {children}
+    <div className="megaMenu_logo">
+      <a href="/">{children}</a>
     </div>
-  )
-}
+  );
+};
 
-export default NavbarBrand
+export default NavbarBrand;
