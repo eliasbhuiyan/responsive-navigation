@@ -22,6 +22,7 @@ ul {
 
 .header {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
 }
 
 .mega_header {
@@ -88,14 +89,23 @@ ul {
 .navbar_main>ul {
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 .navbar_main ul .nav-item {
     height: 100%;
-    display: flex;
-    align-items: center;
     padding: 0 20px;
     cursor: pointer;
+    position: relative;
+}
+
+.navbar_main ul .nav-item p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
 }
 
 .categoryBrows {
@@ -137,6 +147,7 @@ ul {
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
+    z-index: 999;
 }
 
 .categoryBrows_dropDown:hover {
@@ -172,12 +183,9 @@ ul {
     visibility: visible;
 }
 
-.navbar_main .nav-item {
-    position: relative;
-}
 
-.nav-item .dropDown {
-    width: fit-content;
+.nav-item>.dropDown {
+    width: auto;
     position: absolute;
     top: 110%;
     left: 0;
@@ -193,10 +201,110 @@ ul {
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+    z-index: 10;
 }
 
-.nav-item:hover .dropDown {
+
+.nav-item:hover>.dropDown {
     top: 100%;
+    left: 50%;
     opacity: 1;
     visibility: visible;
+}
+
+.menu_close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 20px;
+    display: none;
+}
+
+.menuBar {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    font-size: 20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .main_menu {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #7e7e7e8a;
+    }
+
+    .main_menu .mainMenu_wraper {
+        padding: 50px 20px !important;
+        height: 100%;
+        width: 50%;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        background-color: white;
+        z-index: 99;
+        overflow-y: scroll;
+    }
+
+    .main_menu .mainMenu_wraper .navbar_main {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .main_menu .mainMenu_wraper .navbar_main>ul {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .main_menu .mainMenu_wraper .navbar_main ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .main_menu .mainMenu_wraper .navbar_main ul li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-item .dropDown.hiden {
+        position: static;
+        height: 0;
+        padding: 0;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        transition: all linear .3s;
+        -webkit-transition: all linear .3s;
+        -moz-transition: all linear .3s;
+        -ms-transition: all linear .3s;
+        -o-transition: all linear .3s;
+    }
+
+    .nav-item .dropDown.show {
+        margin-top: 8px;
+        position: static;
+        height: fit-content;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .menuBar,
+    .menu_close {
+        display: block;
+    }
+
+    .mega_header .icon_base {
+        display: none;
+    }
 }
