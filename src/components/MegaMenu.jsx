@@ -1,10 +1,25 @@
+import { useEffect, useState } from "react";
 import "../index.css";
-const MegaMenu = ({ children }) => {
+const MegaMenu = ({ children, style }) => {
   const handelBar = () => {
     document.querySelector(".main_menu").style.display = "block";
   };
+  const [scrolingY, setScrollY] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        setScrollY(true);
+      } else {
+        setScrollY(false);
+      }
+    });
+  }, [scrolingY]);
   return (
-    <header className="header">
+    <header
+      style={style}
+      className={`header ${scrolingY ? "fixedMenu-true" : ""}`}
+    >
       <button onClick={handelBar} className="menuBar">
         <svg
           stroke="currentColor"

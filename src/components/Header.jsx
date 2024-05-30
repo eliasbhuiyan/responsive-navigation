@@ -1,9 +1,7 @@
-const Header = ({ children, style }) => {
+const Header = ({ children }) => {
   return (
-    <div style={style}>
-      <div className="mega_header">
-        {children}
-        </div>
+    <div>
+      <div className="mega_header">{children}</div>
     </div>
   );
 };
