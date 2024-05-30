@@ -1,8 +1,10 @@
 {
   "name": "responsive-navigation",
+  "description": "A responsive navigation component library for React",
   "private": false,
   "version": "1.0.6",
   "type": "module",
+  "author": "Elias Bhuiyan",
   "main": "src/index.js",
   "files": [
     "src/components",
@@ -21,6 +23,11 @@
     "responsive navigation",
     "navigation"
   ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eliasbhuiyan/responsive-navigation"
+  },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
