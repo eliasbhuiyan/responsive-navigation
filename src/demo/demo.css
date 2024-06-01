@@ -1,0 +1,72 @@
+.respinsive-wraper {
+    margin: 60px 0;
+    font-family: sans-serif
+}
+
+.all-headings {
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 20px;
+}
+
+.style-basic {
+    padding: 20px 0;
+    width: 80%;
+    font-size: 15px;
+    color: #535252;
+}
+
+.precode {
+    background-color: #1e293b;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.markdowncode {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 20px auto;
+    width: 60%;
+    overflow: scroll;
+    position: relative;
+}
+
+.preview-example {
+    width: 80%;
+    margin: auto;
+}
+
+.copy-button {
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.copy-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#jsx-codes {
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1024px) {
+    .markdowncode {
+        width: 100%;
+    }
+}
