@@ -4,7 +4,7 @@ Responsive Navigation is a React component library that provides a set of flexib
 
 ## Demo
 
-Live Link : https://eb-responsive-navigation.vercel.app/
+<a target="_blank" href="https://eb-responsive-navigation.vercel.app/">Live Link  &#128072;</a>
 
 ## Installation
 
