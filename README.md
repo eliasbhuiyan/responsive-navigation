@@ -2,6 +2,10 @@
 
 Responsive Navigation is a React component library that provides a set of flexible and customizable navigation components. These components are designed to work seamlessly together to create a responsive and user-friendly navigation experience.
 
+## Demo
+
+Live Link : https://eb-responsive-navigation.vercel.app/
+
 ## Installation
 
 To install the package, use npm:
@@ -28,16 +32,18 @@ import {
   Sidebar,
 } from "responsive-navigation";
 
-<MegaMenu>
-  <Header
-    style={{
-      backgroundColor: "white",
-      borderBottom: "1px solid #dee2e6",
-      padding: "20px 0",
-    }}
-  >
+<MegaMenu
+  style={{
+    backgroundColor: "white",
+    borderBottom: "1px solid #dee2e6",
+    padding: "20px 0",
+  }}
+>
+  <Header>
     <NavbarBrand>
-      <a href="/">{<img src="/logo.png" width="100%" alt="logo" />}</a>
+      <a href="/" style={{ fontSize: "30px", fontWeight: "700" }}>
+        LOGO
+      </a>
     </NavbarBrand>
     <SearchBar>
       <input
@@ -71,7 +77,7 @@ import {
             2
           </span>
         </span>
-        <span>Wishlist</span>
+        <span className="icon_base">Wishlist</span>
       </a>
     </SideItems>
     <SideItems>
@@ -126,7 +132,7 @@ import {
             2
           </span>
         </span>
-        <span>Cart</span>
+        <span className="icon_base">Cart</span>
       </a>
     </SideItems>
   </Header>
@@ -257,5 +263,5 @@ import {
       </div>
     </Contact>
   </MainMenu>
-</MegaMenu>;
+</MegaMenu>
 ```
