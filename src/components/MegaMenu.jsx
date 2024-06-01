@@ -6,15 +6,15 @@ const MegaMenu = ({ children, style }) => {
   };
   const [scrolingY, setScrollY] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
-        setScrollY(true);
-      } else {
-        setScrollY(false);
-      }
-    });
-  }, [scrolingY]);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     if (window.scrollY > 200) {
+  //       setScrollY(true);
+  //     } else {
+  //       setScrollY(false);
+  //     }
+  //   });
+  // }, [scrolingY]);
   return (
     <header
       style={style}
