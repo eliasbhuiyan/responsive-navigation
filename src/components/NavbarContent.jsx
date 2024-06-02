@@ -1,6 +1,6 @@
 const NavbarContent = ({ children }) => {
   const henelClose = () => {
-    document.querySelector(".main_menu").style.display = "none";
+    document.querySelector(".navbar_contentWraper").style.display = "none";
   };
   return (
     <div className="navbar_contentWraper">
