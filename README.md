@@ -4,7 +4,7 @@ Responsive Navigation is a React component library that provides a set of flexib
 
 ## Demo
 
-<a target="_blank" href="https://eb-responsive-navigation.vercel.app/">Live Link  &#128072;</a>
+## <a href="https://eb-responsive-navigation.vercel.app/">Live Demo  &#128072;</a>
 
 ## Installation
 
@@ -13,8 +13,67 @@ To install the package, use npm:
 ```bash
 npm i responsive-navigation
 ```
+## Responsive Navbar
+<a href="https://eb-responsive-navigation.vercel.app"><img src="/public/navbar.png" alt="navbar" /></a>
 
-## Example Code
+## Usage Code
+
+```javascript
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavItem,
+  SideContent,
+  SideItems,
+  DropDown
+} from "responsive-navigation";
+
+<Navbar
+    style={{
+      backgroundColor: "white",
+      borderBottom: "1px solid #dee2e6",
+      padding: "20px 0",
+    }}
+  >
+  <NavbarBrand>
+    <a href="/" style={{ fontSize: "30px", fontWeight: "700" }}>
+      LOGO
+    </a>
+  </NavbarBrand>
+  <NavbarContent>
+    <NavItem>
+      <a href="/">Home</a>
+    </NavItem>
+    <NavItem>
+      <a href="/">About</a>
+    </NavItem>
+    <DropDown style={{ width: "150px" }} label="Services">
+      <NavItem>
+        <a href="/">Service 1</a>
+      </NavItem>
+      <NavItem>
+        <a href="/">Service 2</a>
+      </NavItem>
+      <NavItem>
+        <a href="/">Service 3</a>
+      </NavItem>
+    </DropDown>
+    <NavItem>
+      <a href="/">Contact</a>
+    </NavItem>
+  </NavbarContent>
+  <SideContent>
+    <SideItems>Sign In</SideItems>
+    <SideItems>Sign Up</SideItems>
+  </SideContent>
+</Navbar>
+```
+## Responsive Mega Menu
+<a href="https://eb-responsive-navigation.vercel.app"><img src="/public/mega_menu.png" alt="navbar" /></a>
+
+
+## Usage Code
 
 ```javascript
 import {
