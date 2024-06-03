@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "../index.css";
 const MegaMenu = ({ children, style }) => {
-
   const [scrolingY, setScrollY] = useState(false);
 
   // useEffect(() => {

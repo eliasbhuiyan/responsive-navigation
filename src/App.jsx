@@ -1,6 +1,7 @@
 import CopyButton from "./demo/CopyButton";
 import MegamenuLive from "./demo/MegamenuLive";
 import NavbarLive from "./demo/NavbarLive";
+import SidenavLive from "./demo/SidenavLive";
 import "./demo/demo.css";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       </div>
       <NavbarLive />
       <MegamenuLive />
+      <SidenavLive />
     </div>
   );
 }
