@@ -19,9 +19,13 @@
     "preview": "vite preview"
   },
   "keywords": [
-    "react",
+    "react component",
+    "side menu",
+    "react navbar",
+    "side navbar",
     "navbar",
     "responsive navigation",
+    "mega menu",
     "navigation"
   ],
   "license": "MIT",
