@@ -16,7 +16,7 @@ npm i responsive-navigation
 
 ## Responsive Navbar
 
-<a href="https://eb-responsive-navigation.vercel.app"><img src="https://i.ibb.co/cC4N80x/navbar.png" alt="navbar" /></a>
+<a href="https://eb-responsive-navigation.vercel.app"><img src="/image/navbar.png" alt="navbar" /></a>
 
 ## Usage Code
 
@@ -74,7 +74,7 @@ import {
 
 ## Responsive Side Navbar
 
-<a href="https://eb-responsive-navigation.vercel.app"><img src="https://i.ibb.co/T4vPf3K/sidenav.png" alt="navbar" /></a>
+<a href="https://eb-responsive-navigation.vercel.app"><img src="/image/sidenav.png" alt="navbar" /></a>
 
 ## Usage Code
 
@@ -173,7 +173,7 @@ import {
 
 ## Responsive Mega Menu
 
-<a href="https://eb-responsive-navigation.vercel.app"><img src="https://i.ibb.co/QKdcyjR/mega-menu.png" alt="navbar" /></a>
+<a href="https://eb-responsive-navigation.vercel.app"><img src="/image/mega_menu.png" alt="navbar" /></a>
 
 ## Usage Code
 

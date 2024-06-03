@@ -10,7 +10,8 @@
   "files": [
     "src/components",
     "src/index.js",
-    "src/index.css"
+    "src/index.css",
+    "image"
   ],
   "scripts": {
     "dev": "vite",
