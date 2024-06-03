@@ -90,7 +90,6 @@ const SidenavLive = () => {
           borderRadius: "10px",
           overflow: "hidden",
           display: "flex",
-        //   position: "relative",
         }}
       >
         <SideNavbar style={{ width: "250px", background: "white" }}>

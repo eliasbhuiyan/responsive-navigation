@@ -257,7 +257,7 @@ ul {
 
 .sidebar-wraper {
     width: fit-content;
-    position: static;
+    position: fixed;
     top: 0;
     left: 0;
     transition: all linear .3s;

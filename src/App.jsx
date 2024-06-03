@@ -6,7 +6,7 @@ import "./demo/demo.css";
 
 function App() {
   return (
-    <div className="respinsive-wraper">
+    <div className="respinsive-wraper" style={{ width: "" }}>
       <div className="container">
         <h1 className="all-headings">Responsive Navigation</h1>
         <p className="style-basic">
